@@ -1,0 +1,13 @@
+export const GET_CHORES = 'GET_CHORES';
+export const ADD_CHORE = 'ADD_CHORE';
+export const COMPLETE_CHORE = 'COMPLETE_CHORE';
+export const CHORES_LOADING = 'CHORES_LOADING';
+export const GET_GOAL = 'GET_GOAL';
+export const CREATE_GOAL = 'CREATE_GOAL';
+export const GET_BALANCE = 'GET_BALANCE';
+export const BALANCE_LOADING = 'BALANCE_LOADING';
+export const GOALS_LOADING = 'GOALS_LOADING';
+export const WITHDRAW = 'WITHDRAW';
+export const DEPOSIT = 'DEPOSIT';
+export const GET_TRANSACTIONS = 'GET_TRANSACTIONS';
+export const TRANSACTION_LOADING = 'TRANSACTION_LOADING';

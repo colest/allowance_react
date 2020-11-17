@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+#header-title {
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 2px darkgreen;
+  border-bottom: 2px green solid;
+  padding: 2px;
+  margin-bottom: 15px;
+}
+.fade-enter {
+  opacity:0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
+#prog {
+  height: 5rem;
+  font-size: 2rem;
+}
