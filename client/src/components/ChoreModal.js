@@ -49,10 +49,9 @@ class choreModal extends Component {
         return(
             <div>
                         <Button
-                            color="primary"
+                            color="success"
                             className="text-nowrap"
-                            
-                            style={{marginTop: '2rem'}}
+                            style={{marginTop: '8px'}}
                             onClick={this.toggle}
                         >Add Chore</Button>
 

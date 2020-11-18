@@ -13,7 +13,6 @@ import { connect } from 'react-redux';
 import { getTransactions } from '../actions/transactionActions';
 import Moment from 'react-moment';
 import PropTypes from 'prop-types';
-import { GET_TRANSACTIONS } from '../actions/types';
 import CurrencyFormat from 'react-currency-format';
 
 
@@ -39,12 +38,10 @@ class TransactionModal extends Component {
 
         return(
             <div>
-      
                         <Button
-                            color="primary"
+                            color="success"
                             className="text-nowrap"
-                           
-                            style={{marginTop: '2rem'}}
+                            style={{marginTop: '8px'}}
                             onClick={this.toggle}
                         >Recent Transactions</Button>
 

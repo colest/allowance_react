@@ -23,15 +23,7 @@ class App extends Component {
           <Header/>
           <Container>
             <ChoresList/>
-          </Container>
-          <div>
-              <Row>
-                <Col md={4}></Col>
-                <Col md={2}><ChoreModal/></Col>
-                <Col md={2}><TransactionsModal/></Col>
-                <Col md={4}></Col>
-              </Row>
-          </div>  
+          </Container> 
           <Container style={{marginTop: '2rem'}}>            
             <UpdateFunds/>           
             <GoalSetter/>
