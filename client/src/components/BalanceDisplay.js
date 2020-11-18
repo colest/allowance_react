@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 import { connect } from 'react-redux';
 import { getBalance } from '../actions/balanceActions';
 import { getGoal } from '../actions/goalActions';
@@ -17,14 +18,28 @@ class BalanceDisplay extends Component {
        const { balances } = this.props.balance;
        const { goals } = this.props.goal;
        return (
-            <div>
-                {balances.map(({_id, dollars}) => (
-                <h2 key={_id}>You currently have saved ${dollars}!</h2>
-                ))}
-                {goals.map(({_id,name, cost}) => (
-                    <h2 key={_id}>You are saving for {name} and that will cost you ${cost}.</h2>
-                ))}
-                
+            <div style={{display:"flex", justifyContent: "space-around", marginBottom: "1rem"}}>
+                <div>
+                    <Toast>
+                        <ToastHeader>Balance</ToastHeader>
+                        <ToastBody>
+                            {balances.map(({_id, dollars}) => (
+                                <h4 key={_id}>You currently have saved ${dollars}!</h4>
+                            ))}
+                        </ToastBody>
+                    </Toast>
+                </div>
+                <div></div>
+                <div >
+                    <Toast>
+                        <ToastHeader>Goal Progress</ToastHeader>
+                        <ToastBody>
+                            {goals.map(({_id,name, cost}) => (
+                                <h4 key={_id}>You are saving for {name} and that will cost you ${cost}.</h4>
+                        ))}
+                        </ToastBody>
+                    </Toast>   
+                </div>
             </div>
         )
             

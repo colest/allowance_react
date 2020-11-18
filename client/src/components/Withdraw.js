@@ -28,26 +28,26 @@ class Withdraw extends Component {
 
     render() {
         return (
-            <Container>
+            
                 <Form onSubmit={this.onSubmit}>
-                    <Row>
+                    <Row form>
                         <Col md={3}>
                             <FormGroup>
                                 <Input type="number" name="amount" id='amount-withdraw' onChange={this.onChange} placeholder="Amount"/>
                             </FormGroup>
                         </Col>
-                        <Col md={8}>
+                        <Col md={7}>
                             <FormGroup>
                                 <Input type="text" name="name" id='name-withdraw' onChange={this.onChange} placeholder="Reason"/>
                             </FormGroup>
                         </Col>
-                        <Col md={1}>
-                            <Button color="primary">Withdraw</Button>
+                        <Col md={2}>
+                            <Button color="primary" className="btn-block">Withdraw</Button>
                         </Col>
                     </Row>
 
                 </Form>
-            </Container>
+            
         )
     }
 }

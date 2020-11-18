@@ -6,7 +6,7 @@ import GoalSetter from './components/GoalSetter';
 import GoalTracker from './components/GoalTracker';
 import UpdateFunds from './components/UpdateFunds';
 import TransactionsModal from './components/TransactionsModal';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col,FormGroup } from 'reactstrap';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -23,8 +23,6 @@ class App extends Component {
           <Header/>
           <Container>
             <ChoresList/>
-            
-            
           </Container>
           <div>
               <Row>
@@ -34,13 +32,11 @@ class App extends Component {
                 <Col md={4}></Col>
               </Row>
           </div>  
-          <Container style={{marginTop: '2rem'}}>
-            <UpdateFunds/>
+          <Container style={{marginTop: '2rem'}}>            
+            <UpdateFunds/>           
             <GoalSetter/>
             <GoalTracker/>
-          </Container>
-
-          
+          </Container> 
         </div>  
       </Provider>
     );

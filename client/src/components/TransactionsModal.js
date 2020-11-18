@@ -39,22 +39,14 @@ class TransactionModal extends Component {
 
         return(
             <div>
-                <Row>
-                    <Col md={5}>
-                    </Col>
-                    <Col md={2}>
+      
                         <Button
                             color="primary"
-                            
-                            btn-block
+                            className="text-nowrap"
+                           
                             style={{marginTop: '2rem'}}
                             onClick={this.toggle}
                         >Recent Transactions</Button>
-                    </Col>
-                    <Col md={5}>
-                    </Col>
-
-                </Row>
 
                 <Modal
                   isOpen={this.state.modal}

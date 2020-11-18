@@ -36,21 +36,21 @@ class GoalSetter extends Component {
             <Container>
                 <Form onSubmit={this.onSubmit}>
                     <Row form>
-                        <Col md={6}>
+                        <Col md={7}>
                             <FormGroup >
                                 
                                 <Input type="text" name="name" id="goal-name" onChange={this.onChange} placeholder="Enter a name for your goal!"/>
                             </FormGroup>
 
                         </Col>
-                        <Col md={4}>
+                        <Col md={3}>
                             <FormGroup >
                                 
                                 <Input type="number" name="cost" id="goal-cost" onChange={this.onChange} placeholder="What does your goal cost?"/>
                             </FormGroup>
                         </Col>
                         <Col md={2}>
-                            <Button color="primary" className="ml-3" >Set Goal</Button>
+                            <Button color="primary"  className="text-nowrap btn-block">Set Goal</Button>
                         </Col>
                     
                     </Row>

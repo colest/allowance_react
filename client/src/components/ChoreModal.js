@@ -48,22 +48,13 @@ class choreModal extends Component {
     render () {
         return(
             <div>
-                <Row>
-                    <Col md={5}>
-                    </Col>
-                    <Col md={2}>
                         <Button
-                            color="success"
+                            color="primary"
+                            className="text-nowrap"
                             
-                            btn-block
                             style={{marginTop: '2rem'}}
                             onClick={this.toggle}
                         >Add Chore</Button>
-                    </Col>
-                    <Col md={5}>
-                    </Col>
-
-                </Row>
 
                 <Modal
                   isOpen={this.state.modal}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container } from 'reactstrap';
 import BalanceDisplay from '../components/BalanceDisplay';
 import GoalProgressBar from '../components/GoalProgressBar';
 
@@ -8,9 +9,11 @@ class GoalTracker extends Component {
     render() {
         return (
             <div>
-                
-                <BalanceDisplay/>
-                <GoalProgressBar/>
+                <Container>
+                    <BalanceDisplay/>
+                    <GoalProgressBar/>
+                </Container>
+
             </div>
         )
          
